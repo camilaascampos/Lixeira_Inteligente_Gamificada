@@ -1,3 +1,6 @@
+# Instale o PyTorch ANTES (veja o README): no Windows o padrao e a versao sem GPU.
 ultralytics
 opencv-python
 numpy
+pyserial
+pyyaml

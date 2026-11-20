@@ -1,34 +1,29 @@
 # Ambiente virtual (cada pessoa cria o seu)
 venv/
+.venv/
 
-# Dataset baixado do Roboflow (grande demais para o Git; cada pessoa baixa separado se for treinar)
+# Datasets (grandes demais para o Git; veja o README)
+dataset/
+dataset_atual/
+dataset_novo/
+dataset_combinado/
 train/
 valid/
 test/
 data.yaml
-README.dataset.txt
-README.roboflow.txt
 
-# Pesos pre-treinados de base (baixados automaticamente pelo ultralytics na 1a execucao)
-yolov8s.pt
-yolov8n.pt
-weights/yolo26n.pt
+# Resultados de treino (graficos, checkpoints, imagens de exemplo)
+runs/
+runs_lixeira/
 
-# Cache e arquivos temporarios do Python
+# Pesos .pt: so o modelo final entra no repositorio
+*.pt
+!modelo/best.pt
+
+# Python
 __pycache__/
 *.pyc
 *.cache
 
-# Resultados de treino: mantemos so o modelo final (best.pt), o resto fica de fora
-runs/detect/val/
-runs/detect/runs_lixeira/deteccao_lixo/
-runs/detect/runs_lixeira/deteccao_lixo-2/
-runs/detect/runs_lixeira/deteccao_lixo-3/weights/last.pt
-runs/detect/runs_lixeira/deteccao_lixo-3/weights/epoch*.pt
-runs/detect/runs_lixeira/deteccao_lixo-3/train_batch*.jpg
-runs/detect/runs_lixeira/deteccao_lixo-3/val_batch*.jpg
-runs/detect/runs_lixeira/deteccao_lixo-3/labels.jpg
-runs/detect/runs_lixeira/deteccao_lixo-3/labels_correlogram.jpg
-
-# Arquivos do VS Code (opcional)
+# Editor
 .vscode/
